@@ -45,7 +45,7 @@ The dataset includes both numerical and categorical features relevant to custome
 3. **Correlation Matrix**:
    ![Correlation Matrix](correlation_matrix.png)
    - Highlights positive and negative relationships between numerical features.
-   - `duration` and `y_encoded` have a moderate positive correlation, suggesting longer calls are associated with higher subscription rates.
+   - `duration` and `y_encoded` have a moderate positive correlation, suggesting longer calls are associated with higher subscription rates. (Note that y_encoded is the subscription rate)
 
 4. **Education vs Subscription**:
    ![Education vs Subscription](education_subscription_distribution.png)
