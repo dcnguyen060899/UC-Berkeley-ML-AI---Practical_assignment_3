@@ -110,7 +110,7 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 The Support Vector Machine (SVM) is the best choice for optimizing marketing campaigns due to its superior predictive performance and ability to generalize well on new data, despite its higher computational cost.
 
 ## Feature Importance Analysis
-Permutation feature importance was analyzed for SVM and Logistic Regression models.
+Permutation feature importance was analyzed for SVM and Logistic Regression models due to the lack of overfitting evidence.
 
 ### SVM Feature Importance
 Top features:
