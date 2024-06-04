@@ -163,6 +163,28 @@ PDPs help understand the relationship between features and the target variable.
 - **Insights**:
   - Align on the effectiveness of fewer contacts and strategic timing for higher subscription rates.
 
+### Recommendations Moving Forward
+
+1. **Enhanced Feature Engineering**:
+   - **Interaction Features**: Develop interaction terms between important features, such as `num_duration` and `num_previous`.
+   - **Temporal Features**: Create features like recency of contact (`recent_contact` if `num_pdays` < 7).
+   - **Aggregate Features**: Calculate mean/median call duration for each customer.
+   - **Binning Features**: Bin continuous variables like call duration into categories (e.g., short, medium, long).
+   - **Lag Features**: Generate lag features for temporal data, like the difference in days between consecutive contacts.
+   - **Encoding Categorical Variables**: Use frequency encoding for categorical variables to retain distribution information.
+   - **Macro-Economic Trends**: Create moving averages for economic indicators like `num_emp.var.rate`.
+
+2. **Model Improvement**:
+   - **Ensemble Methods**: Combine models using techniques like stacking, boosting, or bagging to improve predictive performance.
+
+3. **Business Strategy Optimization**:
+   - **Call Duration Management**: Focus on maintaining call durations within the optimal range of 6-8 minutes to maximize subscription likelihood.
+   - **Contact Frequency Reduction**: Reduce the number of campaign contacts to avoid customer annoyance and improve effectiveness.
+   - **Strategic Re-Contact Timing**: Plan re-contacts after optimal periods (e.g., 20-30 days) and focus on months that show higher success rates based on historical data.
+
+
+By implementing these recommendations, the marketing campaigns can become more efficient, targeted, and effective, leading to higher subscription rates and better resource management.
+
 ## Conclusion
 The SVM model is recommended for its superior performance and actionable insights. The use of permutation importance and PDPs enhances the model's interpretability, guiding strategic decisions for optimizing marketing campaigns. Further feature engineering can improve model performance and provide deeper insights into customer behavior
 
