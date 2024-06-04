@@ -94,7 +94,7 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 
 ### Visualizations
 - **Cross-Validation Mean Accuracy Comparison**
-  ![CV Mean Accuracy](cross_validation_mean_accuracy_comparison.png)
+  ![CV Mean Accuracy](cross_validate_mean_accuracy_comparison.png)
 - **Test Accuracy Comparison**
   ![Test Accuracy](test_accuracy_comparison.png)
 - **Training Accuracy Comparison**
