@@ -32,26 +32,55 @@ The dataset includes both numerical and categorical features relevant to custome
 
 ## Exploratory Data Analysis (EDA)
 ### Key Visualizations
-1. **Age Distribution**: Most customers are around 30 years old.
+1. **Age Distribution**:
    ![Age Distribution](age_distribution.png)
-2. **Call Duration Distribution**: Majority of calls are short, with a few longer calls.
+   - Most customers are around 30 years old.
+   - The age distribution shows a right skew, indicating fewer older customers.
+
+2. **Call Duration Distribution**:
    ![Call Duration Distribution](call_duration_distribution.png)
-3. **Correlation Matrix**: Highlights relationships between numerical features.
+   - Majority of calls are short, typically under 500 seconds.
+   - The distribution is heavily right-skewed, with a long tail of longer calls.
+
+3. **Correlation Matrix**:
    ![Correlation Matrix](correlation_matrix.png)
-4. **Education vs Subscription**: Higher subscription rates for customers with university degrees.
+   - Highlights positive and negative relationships between numerical features.
+   - `duration` and `y_encoded` have a moderate positive correlation, suggesting longer calls are associated with higher subscription rates.
+
+4. **Education vs Subscription**:
    ![Education vs Subscription](education_subscription_distribution.png)
-5. **Job vs Subscription**: Varying subscription rates across different job types.
+   - Higher subscription rates are observed among customers with university degrees.
+   - Customers with lower educational levels tend to have lower subscription rates.
+
+5. **Job vs Subscription**:
    ![Job vs Subscription](job_subscription_distribution.png)
-6. **Subscription Distribution**: Majority did not subscribe.
+   - Job types like 'admin.' and 'blue-collar' have lower subscription rates.
+   - Higher subscription rates are observed for job types like 'management' and 'retired'.
+
+6. **Subscription Distribution**:
    ![Subscription Distribution](subscription_distribution.png)
-7. **Contact Communication Type vs Subscription**: Higher subscription rates for cellular contacts.
+   - Majority of the customers did not subscribe.
+   - There is a significant class imbalance with far fewer subscribers.
+
+7. **Contact Communication Type vs Subscription**:
    ![Contact Communication Type vs Subscription](contact_communication_type_subscription_distribution.png)
-8. **Housing Loan vs Subscription**: Higher subscription rates for those without housing loans.
+   - Higher subscription rates are seen for cellular contacts compared to telephone.
+   - The majority of contacts were made via cellular phones.
+
+8. **Housing Loan vs Subscription**:
    ![Housing Loan vs Subscription](housing_loan_subscription_distribution.png)
-9. **Marital Status vs Subscription**: Single customers have higher subscription rates.
+   - Customers without housing loans have higher subscription rates.
+   - Most customers, irrespective of subscription status, do have housing loans.
+
+9. **Marital Status vs Subscription**:
    ![Marital Status vs Subscription](martial_status_subscription_distribution.png)
-10. **Personal Loan vs Subscription**: Higher subscription rates for those without personal loans.
+   - Single customers have higher subscription rates compared to married or divorced ones.
+   - Married customers form the largest group but have lower subscription rates.
+
+10. **Personal Loan vs Subscription**:
     ![Personal Loan vs Subscription](personal_loan_subscription_distribution.png)
+    - Higher subscription rates are observed for customers without personal loans.
+    - Most customers, especially those who did not subscribe, do not have personal loans.
 
 ## Model Comparison and Observing Overfitting
 Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighbors (KNN), and Support Vector Machine (SVM).
