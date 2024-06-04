@@ -33,52 +33,52 @@ The dataset includes both numerical and categorical features relevant to custome
 ## Exploratory Data Analysis (EDA)
 ### Key Visualizations
 1. **Age Distribution**:
-   ![Age Distribution](age_distribution.png)
+   ![Age Distribution](images/age_distribution.png)
    - Most customers are around 30 years old.
    - The age distribution shows a right skew, indicating fewer older customers.
 
 2. **Call Duration Distribution**:
-   ![Call Duration Distribution](call_duration_distribution.png)
+   ![Call Duration Distribution](images/call_duration_distribution.png)
    - Majority of calls are short, typically under 500 seconds.
    - The distribution is heavily right-skewed, with a long tail of longer calls.
 
 3. **Correlation Matrix**:
-   ![Correlation Matrix](correlation_matrix.png)
+   ![Correlation Matrix](images/correlation_matrix.png)
    - Highlights positive and negative relationships between numerical features.
    - `duration` and `y_encoded` have a moderate positive correlation, suggesting longer calls are associated with higher subscription rates. (Note that y_encoded is the subscription rate)
 
 4. **Education vs Subscription**:
-   ![Education vs Subscription](education_subscription_distribution.png)
+   ![Education vs Subscription](images/education_subscription_distribution.png)
    - Higher subscription rates are observed among customers with university degrees.
    - Customers with lower educational levels tend to have lower subscription rates.
 
 5. **Job vs Subscription**:
-   ![Job vs Subscription](job_subscription_distribution.png)
+   ![Job vs Subscription](images/job_subscription_distribution.png)
    - Job types like 'admin.' and 'blue-collar' have lower subscription rates.
    - Higher subscription rates are observed for job types like 'management' and 'retired'.
 
 6. **Subscription Distribution**:
-   ![Subscription Distribution](subscription_distribution.png)
+   ![Subscription Distribution](images/subscription_distribution.png)
    - Majority of the customers did not subscribe.
    - There is a significant class imbalance with far fewer subscribers.
 
 7. **Contact Communication Type vs Subscription**:
-   ![Contact Communication Type vs Subscription](contact_communication_type_subscription_distribution.png)
+   ![Contact Communication Type vs Subscription](images/contact_communication_type_subscription_distribution.png)
    - Higher subscription rates are seen for cellular contacts compared to telephone.
    - The majority of contacts were made via cellular phones.
 
 8. **Housing Loan vs Subscription**:
-   ![Housing Loan vs Subscription](housing_loan_subscription_distribution.png)
+   ![Housing Loan vs Subscription](images/housing_loan_subscription_distribution.png)
    - Customers without housing loans have higher subscription rates.
    - Most customers, irrespective of subscription status, do have housing loans.
 
 9. **Marital Status vs Subscription**:
-   ![Marital Status vs Subscription](martial_status_subscription_distribution.png)
+   ![Marital Status vs Subscription](images/martial_status_subscription_distribution.png)
    - Single customers have higher subscription rates compared to married or divorced ones.
    - Married customers form the largest group but have lower subscription rates.
 
 10. **Personal Loan vs Subscription**:
-    ![Personal Loan vs Subscription](personal_loan_subscription_distribution.png)
+    ![Personal Loan vs Subscription](images/personal_loan_subscription_distribution.png)
     - Higher subscription rates are observed for customers without personal loans.
     - Most customers, especially those who did not subscribe, do not have personal loans.
 
@@ -94,13 +94,13 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 
 ### Visualizations
 - **Cross-Validation Mean Accuracy Comparison**
-  ![CV Mean Accuracy](cross_validate_mean_accuracy_comparison.png)
+  ![CV Mean Accuracy](images/cross_validate_mean_accuracy_comparison.png)
 - **Test Accuracy Comparison**
-  ![Test Accuracy](test_accuracy_comparison.png)
+  ![Test Accuracy](images/test_accuracy_comparison.png)
 - **Training Accuracy Comparison**
-  ![Training Accuracy](training_accuracy_comparison.png)
+  ![Training Accuracy](images/training_accuracy_comparison.png)
 - **Training Time Comparison**
-  ![Training Time](training_time_comparison.png)
+  ![Training Time](images/training_time_comparison.png)
 
 ### Observations
 - SVM shows the highest accuracy but requires more training time.
@@ -114,54 +114,54 @@ The Support Vector Machine (SVM) is the best choice for optimizing marketing cam
 #### Logistic Regression
 - **Training Time**: 81.01 seconds
 - **Confusion Matrix**:
-  ![Logistic Regression Confusion Matrix](logistic_regression_cf.png)
+  ![Logistic Regression Confusion Matrix](images/logistic_regression_cf.png)
 - **Classification Report**:
 
 | Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
 |-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
 | Values    | 0.89           | 0.87            | 0.87        | 0.89         | 0.88          | 0.88           | 0.88     | 0.9386    |
 
-  ![Logistic Regression ROC Curve](lr_roc_curve.png)
-  ![Logistic Regression PR Curve](lr_pr_curve.png)
+  ![Logistic Regression ROC Curve](images/lr_roc_curve.png)
+  ![Logistic Regression PR Curve](images/lr_pr_curve.png)
 
 #### Decision Tree
 - **Training Time**: 2.32 seconds
 - **Confusion Matrix**:
-  ![Decision Tree Confusion Matrix](decision_tree_cf.png)
+  ![Decision Tree Confusion Matrix](images/decision_tree_cf.png)
 - **Classification Report**:
 
 | Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
 |-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
 | Values    | 0.99           | 0.93            | 0.93        | 0.99         | 0.96          | 0.96           | 0.96     | 0.9674    |
 
-  ![Decision Tree ROC Curve](dt_roc_curve.png)
-  ![Decision Tree PR Curve](dt_pr_curve.png)
+  ![Decision Tree ROC Curve](images/dt_roc_curve.png)
+  ![Decision Tree PR Curve](images/dt_pr_curve.png)
 
 #### K-Nearest Neighbors (KNN)
 - **Training Time**: 4.75 seconds
 - **Confusion Matrix**:
-  ![K-Nearest Neighbors Confusion Matrix](k_nearest_neighbors_cf.png)
+  ![K-Nearest Neighbors Confusion Matrix](images/k_nearest_neighbors_cf.png)
 - **Classification Report**:
 
 | Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
 |-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
 | Values    | 1.00           | 0.85            | 0.82        | 1.00         | 0.90          | 0.92           | 0.91     | 0.9913    |
 
-  ![K-Nearest Neighbors ROC Curve](knn_roc_curve.png)
-  ![K-Nearest Neighbors PR Curve](knn_pr_curve.png)
+  ![K-Nearest Neighbors ROC Curve](images/knn_roc_curve.png)
+  ![K-Nearest Neighbors PR Curve](images/knn_pr_curve.png)
 
 #### Support Vector Machine (SVM)
 - **Training Time**: 875.95 seconds
 - **Confusion Matrix**:
-  ![Support Vector Machine Confusion Matrix](support_vector_machine_cf.png)
+  ![Support Vector Machine Confusion Matrix](images/support_vector_machine_cf.png)
 - **Classification Report**:
 
 | Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
 |-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
 | Values    | 0.99           | 1.00            | 1.00        | 0.99         | 1.00          | 1.00           | 1.00     | 0.9998    |
 
-  ![Support Vector Machine ROC Curve](svm_roc_curve.png)
-  ![Support Vector Machine PR Curve](svm_pr_curve.png)
+  ![Support Vector Machine ROC Curve](images/svm_roc_curve.png)
+  ![Support Vector Machine PR Curve](images/svm_pr_curve.png)
 
 The SVM model achieved the highest accuracy and AUC but required the longest training time. The Decision Tree and KNN models also performed well, with the Decision Tree showing strong accuracy and KNN demonstrating high recall for the positive class. Logistic Regression, while slightly lower in performance, remains a robust and interpretable model.
 
@@ -176,7 +176,7 @@ Top features:
 - `num_nr.employed`
 - `num_euribor3m`
 
-![SVM Feature Importance](permutation_feature_importance_svm.png)
+![SVM Feature Importance](images/permutation_feature_importance_svm.png)
 
 ### Logistic Regression Feature Importance
 Top features:
@@ -186,7 +186,7 @@ Top features:
 - `num_euribor3m`
 - `num_emp.var.rate`
 
-![Logistic Regression Feature Importance](permutation_feature_importance_lr.png)
+![Logistic Regression Feature Importance](images/permutation_feature_importance_lr.png)
 
 ## Partial Dependence Plots (PDPs)
 PDPs help understand the relationship between features and the target variable.
@@ -201,7 +201,7 @@ PDPs help understand the relationship between features and the target variable.
 7. **Consumer Confidence Index**: Moderate values are better.
 8. **Month of Contact**: Specific months like March, June, September, and December might be less favorable.
 
-![Partial Dependence Plots](pdpx.png)
+![Partial Dependence Plots](images/pdpx.png)
 
 ### Business Implications
 1. **Optimal Call Duration**: Maintain calls between 6 and 8 minutes.
@@ -242,9 +242,4 @@ PDPs help understand the relationship between features and the target variable.
 By implementing these recommendations, the marketing campaigns can become more efficient, targeted, and effective, leading to higher subscription rates and better resource management.
 
 ## Conclusion
-The SVM model is recommended for its superior performance and actionable insights. The use of permutation importance and PDPs enhances the model's interpretability, guiding strategic decisions for optimizing marketing campaigns. Further feature engineering can improve model performance and provide deeper insights into customer behavior
-
-
-
-
-
+The SVM model is recommended for its superior performance and actionable insights. The use of permutation importance and PDPs enhances the model's interpretability, guiding strategic decisions for optimizing marketing campaigns. Further feature engineering can improve model performance and provide deeper insights into customer behavior.
