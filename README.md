@@ -35,23 +35,23 @@ The dataset includes both numerical and categorical features relevant to custome
 1. **Age Distribution**: Most customers are around 30 years old.
    ![Age Distribution](age_distribution.png)
 2. **Call Duration Distribution**: Majority of calls are short, with a few longer calls.
-   ![Call Duration Distribution]()
+   ![Call Duration Distribution](call_duration_distribution.png)
 3. **Correlation Matrix**: Highlights relationships between numerical features.
-   ![Correlation Matrix]()
+   ![Correlation Matrix](correlation_matrix.png)
 4. **Education vs Subscription**: Higher subscription rates for customers with university degrees.
-   ![Education vs Subscription]()
+   ![Education vs Subscription](education_subscription_distribution.png)
 5. **Job vs Subscription**: Varying subscription rates across different job types.
-   ![Job vs Subscription]()
+   ![Job vs Subscription](job_subscription_distribution.png)
 6. **Subscription Distribution**: Majority did not subscribe.
-   ![Subscription Distribution]()
+   ![Subscription Distribution](subscription_distribution.png)
 7. **Contact Communication Type vs Subscription**: Higher subscription rates for cellular contacts.
-   ![Contact Communication Type vs Subscription]()
+   ![Contact Communication Type vs Subscription](contact_communication_type_subscription_distribution.png)
 8. **Housing Loan vs Subscription**: Higher subscription rates for those without housing loans.
-   ![Housing Loan vs Subscription]()
+   ![Housing Loan vs Subscription](housing_loan_subscription_distribution.png)
 9. **Marital Status vs Subscription**: Single customers have higher subscription rates.
-   ![Marital Status vs Subscription]()
+   ![Marital Status vs Subscription](martial_status_subscription_distribution.png)
 10. **Personal Loan vs Subscription**: Higher subscription rates for those without personal loans.
-    ![Personal Loan vs Subscription]()
+    ![Personal Loan vs Subscription](personal_loan_subscription_distribution.png)
 
 ## Model Comparison and Observing Overfitting
 Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighbors (KNN), and Support Vector Machine (SVM).
@@ -65,13 +65,13 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 
 ### Visualizations
 - **Cross-Validation Mean Accuracy Comparison**
-  ![CV Mean Accuracy]()
+  ![CV Mean Accuracy](cross_validation_mean_accuracy_comparison.png)
 - **Test Accuracy Comparison**
-  ![Test Accuracy]()
+  ![Test Accuracy](test_accuracy_comparison.png)
 - **Training Accuracy Comparison**
-  ![Training Accuracy]()
+  ![Training Accuracy](training_accuracy_comparison.png)
 - **Training Time Comparison**
-  ![Training Time]()
+  ![Training Time](training_time_comparison.png)
 
 ### Observations
 - SVM shows the highest accuracy but requires more training time.
@@ -89,7 +89,7 @@ Top features:
 - `num_nr.employed`
 - `num_euribor3m`
 
-![SVM Feature Importance]()
+![SVM Feature Importance](permutation_feature_importance_svm.png)
 
 ### Logistic Regression Feature Importance
 Top features:
@@ -99,7 +99,7 @@ Top features:
 - `num_euribor3m`
 - `num_emp.var.rate`
 
-![Logistic Regression Feature Importance]()
+![Logistic Regression Feature Importance](permutation_feature_importance_lr.png)
 
 ## Partial Dependence Plots (PDPs)
 PDPs help understand the relationship between features and the target variable.
@@ -114,7 +114,7 @@ PDPs help understand the relationship between features and the target variable.
 7. **Consumer Confidence Index**: Moderate values are better.
 8. **Month of Contact**: Specific months like March, June, September, and December might be less favorable.
 
-![Partial Dependence Plots]()
+![Partial Dependence Plots](pdpx.png)
 
 ### Business Implications
 1. **Optimal Call Duration**: Maintain calls between 6 and 8 minutes.
