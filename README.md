@@ -109,6 +109,62 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 
 The Support Vector Machine (SVM) is the best choice for optimizing marketing campaigns due to its superior predictive performance and ability to generalize well on new data, despite its higher computational cost.
 
+### Classification Performance and Confusion Matrix Analysis
+
+#### Logistic Regression
+- **Training Time**: 81.01 seconds
+- **Confusion Matrix**:
+  ![Logistic Regression Confusion Matrix](logistic_regression_cf.png)
+- **Classification Report**:
+
+| Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
+|-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
+| Values    | 0.89           | 0.87            | 0.87        | 0.89         | 0.88          | 0.88           | 0.88     | 0.9386    |
+
+  ![Logistic Regression ROC Curve](lr_roc_curve.png)
+  ![Logistic Regression PR Curve](lr_pr_curve.png)
+
+#### Decision Tree
+- **Training Time**: 2.32 seconds
+- **Confusion Matrix**:
+  ![Decision Tree Confusion Matrix](decision_tree_cf.png)
+- **Classification Report**:
+
+| Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
+|-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
+| Values    | 0.99           | 0.93            | 0.93        | 0.99         | 0.96          | 0.96           | 0.96     | 0.9674    |
+
+  ![Decision Tree ROC Curve](dt_roc_curve.png)
+  ![Decision Tree PR Curve](dt_pr_curve.png)
+
+#### K-Nearest Neighbors (KNN)
+- **Training Time**: 4.75 seconds
+- **Confusion Matrix**:
+  ![K-Nearest Neighbors Confusion Matrix](k_nearest_neighbors_cf.png)
+- **Classification Report**:
+
+| Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
+|-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
+| Values    | 1.00           | 0.85            | 0.82        | 1.00         | 0.90          | 0.92           | 0.91     | 0.9913    |
+
+  ![K-Nearest Neighbors ROC Curve](knn_roc_curve.png)
+  ![K-Nearest Neighbors PR Curve](knn_pr_curve.png)
+
+#### Support Vector Machine (SVM)
+- **Training Time**: 875.95 seconds
+- **Confusion Matrix**:
+  ![Support Vector Machine Confusion Matrix](support_vector_machine_cf.png)
+- **Classification Report**:
+
+| Metric    | Precision (No) | Precision (Yes) | Recall (No) | Recall (Yes) | F1-score (No) | F1-score (Yes) | Accuracy | ROC-AUC   |
+|-----------|----------------|-----------------|-------------|--------------|---------------|----------------|----------|-----------|
+| Values    | 0.99           | 1.00            | 1.00        | 0.99         | 1.00          | 1.00           | 1.00     | 0.9998    |
+
+  ![Support Vector Machine ROC Curve](svm_roc_curve.png)
+  ![Support Vector Machine PR Curve](svm_pr_curve.png)
+
+The SVM model achieved the highest accuracy and AUC but required the longest training time. The Decision Tree and KNN models also performed well, with the Decision Tree showing strong accuracy and KNN demonstrating high recall for the positive class. Logistic Regression, while slightly lower in performance, remains a robust and interpretable model.
+
 ## Feature Importance Analysis
 Permutation feature importance was analyzed for SVM and Logistic Regression models due to the lack of overfitting evidence.
 
