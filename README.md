@@ -107,6 +107,8 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 - Logistic Regression and Decision Tree models have strong performance with faster training times.
 - KNN and Decision Tree model indicates potential overfitting.
 
+The Support Vector Machine (SVM) is the best choice for optimizing marketing campaigns due to its superior predictive performance and ability to generalize well on new data, despite its higher computational cost.
+
 ## Feature Importance Analysis
 Permutation feature importance was analyzed for SVM and Logistic Regression models.
 
