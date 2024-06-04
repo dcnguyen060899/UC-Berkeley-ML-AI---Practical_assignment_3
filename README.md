@@ -33,7 +33,7 @@ The dataset includes both numerical and categorical features relevant to custome
 ## Exploratory Data Analysis (EDA)
 ### Key Visualizations
 1. **Age Distribution**: Most customers are around 30 years old.
-   ![Age Distribution]()
+   ![Age Distribution](age_distribution.png)
 2. **Call Duration Distribution**: Majority of calls are short, with a few longer calls.
    ![Call Duration Distribution]()
 3. **Correlation Matrix**: Highlights relationships between numerical features.
