@@ -105,7 +105,7 @@ Four models were evaluated: Logistic Regression, Decision Tree, K-Nearest Neighb
 ### Observations
 - SVM shows the highest accuracy but requires more training time.
 - Logistic Regression and Decision Tree models have strong performance with faster training times.
-- KNN model indicates potential overfitting.
+- KNN and Decision model indicates potential overfitting.
 
 ## Feature Importance Analysis
 Permutation feature importance was analyzed for SVM and Logistic Regression models.
