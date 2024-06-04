@@ -155,5 +155,18 @@ PDPs help understand the relationship between features and the target variable.
 5. **Economic Indicators**: Monitor to identify favorable conditions.
 6. **Month of Contact**: Adjust timing strategies based on further data validation.
 
+### Comparison with the Paper Findings
+- **Model Performance**:
+  - Both my findings and the paper highlight SVM as the best performer.
+- **Key Features**:
+  - Both analyses emphasize the importance of call duration and month of contact.
+- **Insights**:
+  - Align on the effectiveness of fewer contacts and strategic timing for higher subscription rates.
+
 ## Conclusion
-The SVM model is recommended for its superior performance and actionable insights. The use of permutation importance and PDPs enhances the model's interpretability, guiding strategic decisions for optimizing marketing campaigns. Further feature engineering can improve model performance and provide deeper insights into customer behavior.
+The SVM model is recommended for its superior performance and actionable insights. The use of permutation importance and PDPs enhances the model's interpretability, guiding strategic decisions for optimizing marketing campaigns. Further feature engineering can improve model performance and provide deeper insights into customer behavior
+
+
+
+
+
