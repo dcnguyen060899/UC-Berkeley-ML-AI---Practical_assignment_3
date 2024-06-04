@@ -175,7 +175,7 @@ PDPs help understand the relationship between features and the target variable.
    - **Macro-Economic Trends**: Create moving averages for economic indicators like `num_emp.var.rate`.
 
 2. **Model Improvement**:
-   - **Ensemble Methods**: Combine models using techniques like stacking, boosting, or bagging to improve predictive performance.
+   - **Ensemble Methods**: Combine models using techniques like Random Forest, XGBoost, Gradient Boosting or possibly neural network to capture its hidden complexity.
 
 3. **Business Strategy Optimization**:
    - **Call Duration Management**: Focus on maintaining call durations within the optimal range of 6-8 minutes to maximize subscription likelihood.
