@@ -1,4 +1,4 @@
-# [UC-Berkeley-ML-AI - Practical Assignment 3](https://dcnguyen060899.github.io/UC-Berkeley-ML-AI-Capstone_Work_Sample/)
+# UC-Berkeley-ML-AI - Practical Assignment 3
 
 ## Overview
 This project aims to build and evaluate predictive models for a marketing campaign to optimize customer subscriptions for long-term deposit products. It involves data preprocessing, exploratory data analysis (EDA), model training, and evaluation.
